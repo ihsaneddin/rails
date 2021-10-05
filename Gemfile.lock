@@ -1,15 +1,16 @@
 GIT
-  remote: https://github.com/QueueClassic/queue_classic.git
-  revision: 1e40ddd810c416619ead88316b2b251936ee2495
-  specs:
-    queue_classic (4.0.0.pre.alpha1)
-      pg (>= 0.17, < 2.0)
-
-GIT
   remote: https://github.com/brianmario/mysql2.git
   revision: 7f4e844fccf6afa888d0bd108d4707a2a7784484
   specs:
     mysql2 (0.5.3)
+
+GIT
+  remote: https://github.com/jhawthorn/queue_classic.git
+  revision: dbfee9bda71020b8f11ae8d9b85932462b7fbee0
+  branch: patch-1
+  specs:
+    queue_classic (4.0.0.pre.alpha1)
+      pg (>= 0.17, < 2.0)
 
 GIT
   remote: https://github.com/matthewd/websocket-client-simple.git
@@ -19,6 +20,14 @@ GIT
     websocket-client-simple (0.3.0)
       event_emitter
       websocket
+
+GIT
+  remote: https://github.com/rails/tailwindcss-rails.git
+  revision: 66508d5a79f2935287a7ec39a7d936babfbddaac
+  branch: main
+  specs:
+    tailwindcss-rails (0.5.0)
+      rails (>= 6.0.0)
 
 PATH
   remote: .
@@ -479,8 +488,6 @@ GEM
       rails (>= 6.0.0)
     sucker_punch (3.0.1)
       concurrent-ruby (~> 1.0)
-    tailwindcss-rails (0.4.3)
-      rails (>= 6.0.0)
     terser (1.1.4)
       execjs (>= 0.3.0, < 3)
     thin (1.8.1)
@@ -590,7 +597,7 @@ DEPENDENCIES
   stackprof
   stimulus-rails
   sucker_punch
-  tailwindcss-rails
+  tailwindcss-rails!
   terser (>= 1.1.4)
   turbo-rails
   tzinfo-data

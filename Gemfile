@@ -18,7 +18,7 @@ gem "turbo-rails"
 gem "jsbundling-rails"
 gem "cssbundling-rails"
 gem "importmap-rails"
-gem "tailwindcss-rails"
+gem "tailwindcss-rails", github: "rails/tailwindcss-rails", branch: "main"
 # require: false so bcrypt is loaded only when has_secure_password is used.
 # This is to avoid Active Model (and by extension the entire framework)
 # being dependent on a binary library.
